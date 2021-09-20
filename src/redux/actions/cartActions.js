@@ -1,10 +1,9 @@
 export const ADD_TO_CART = "ADD_TO_CARD";
 export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
 
-export const addToCart = (id) => {
+export const addToCart = (id,name) => {
   return {
-    type: ADD_TO_CART,
-    id,
+    type: ADD_TO_CART, id,name
   };
 };
 

@@ -12,7 +12,7 @@ const Cart = (props) => {
     
         {
 
-            cart.map(id => <li>{id} <button onClick={()=>removeFromCart(id)}>Delete</button></li>)
+            cart.map(pd => <li key={pd.cartId}>{pd.name} <button onClick={()=>removeFromCart(pd.cartId)}>Delete</button></li>)
         }
     </div>
   );
